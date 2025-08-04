@@ -91,7 +91,7 @@ console.log(myArray);
 // slice 
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
-let myNewArray = myArray.slice(1, 3);
+let myNewArray = myArray.slice(1, 3);  // muestra el indice de inicio al que se solicita 
 
 console.log(myArray);
 console.log(myNewArray);

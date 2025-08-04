@@ -27,7 +27,7 @@ console.log(mySet.delete("Brais"));
 console.log(mySet.delete(4));
 
 
-// has  debuelve un booleano verdadero o falso dependiendo de que el valor de  la variable se encuentra en set o no
+// has      debuelve un booleano verdadero o falso dependiendo de que el valor de  la variable se encuentra en set o no
 
 console.log(mySet.has("Moure"));
 console.log(mySet.has("Brais"));
