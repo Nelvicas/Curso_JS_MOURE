@@ -47,3 +47,20 @@ console.log(person3.alias);
 
 
 // Funciones en clases 
+
+class PersonWithMethod{
+
+    constructor(name, age, alias){
+        this.name = name;
+        this.age = age;
+        this.alias = alias;
+    }
+    walk(){
+        console.log("La persona camina");
+    }
+}
+
+let person4 = new PersonWithMethod("Brais", 37, "Moiuredev");
+
+console.log(person4);
+person4.walk();
