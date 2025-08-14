@@ -62,5 +62,61 @@ class PersonWithMethod{
 
 let person4 = new PersonWithMethod("Brais", 37, "Moiuredev");
 
-console.log(person4);
+//Sconsole.log(person4);
 person4.walk();
+
+
+// Propiedades privadas
+
+
+class PrivatePerson{
+
+    #bank     // asi se define una propiedad privada solo se puede acceder desde la clase 
+
+    constructor(name, age, alias, bank){
+        this.name = name
+        this.age = age
+        this.alias = alias
+        this.#bank = bank 
+    }
+
+    pay(){
+        this.#bank
+    }
+}
+
+let person5 = new PrivatePerson("Brais", 37, "Mouredev", "IBA65453");
+
+
+//   ya no podemos acceder
+//   console.log(person5.#bank);  
+// person5.bank = new  IBA65453   //  bank no es #bank
+
+console.log(person5);
+
+
+
+// Getters y Setters
+
+class GetPerson{
+
+    #name
+    #age
+    #alias
+
+    constructor(name, age, alias){
+        this.#name = name
+        this.#age = age
+        this.#alias = alias
+    }
+
+    get name(){
+        return this.#name
+    }
+    
+}
+
+let person6 = new GetPerson("Brais", 38, "Mourede");
+
+console.log(person6);
+console.log(person6.name);
