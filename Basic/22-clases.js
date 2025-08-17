@@ -3,6 +3,7 @@
 
 class Person {
 
+    // el constructor se ocupa para inicializar el objeto
     constructor( name, age, alias){
         this.name = name;
         this.age = age;
@@ -10,7 +11,9 @@ class Person {
     }
 }
 
+
 //Sintaxis
+// intanciarla  ( Crear el objeto )
 
 let person = new Person("Brais", 37, "Mouredev");
 let person2 = new Person("Nelvi", 30, "Nel");
@@ -96,7 +99,7 @@ console.log(person5);
 
 
 
-// Getters y Setters
+// Getters(obtener) y Setters(establecer)
 
 class GetPerson{
 
@@ -122,6 +125,8 @@ console.log(person6);
 console.log(person6.name);
 
 
+
+
 //   Herencia   ( heredar las propiedades y comportamientos de una clase)
 
 
@@ -140,6 +145,10 @@ class Animal{
 class Dog extends Animal{
     run(){
         console.log("El perro corre");
+    }
+
+    sound(){
+        console.log("Guau!")
     }
 }
 
