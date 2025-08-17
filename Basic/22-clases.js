@@ -120,3 +120,60 @@ let person6 = new GetPerson("Brais", 38, "Mourede");
 
 console.log(person6);
 console.log(person6.name);
+
+
+//   Herencia   ( heredar las propiedades y comportamientos de una clase)
+
+
+class Animal{
+
+    constructor(name){
+        this.name = name;
+    }
+
+    sound(){
+        console.log("Emite un sonido generico");
+    }
+}
+
+
+class Dog extends Animal{
+    run(){
+        console.log("El perro corre");
+    }
+}
+
+
+class Fish extends Animal{
+
+    constructor(name, size){
+        super(name);
+        this.siza = size
+    }
+
+    swim(){
+        console.log("El pez nada");
+    }
+}
+
+
+let myDog = new Dog("MoureDog");
+myDog.run();
+myDog.sound();
+
+let myFish = new Fish("MoureFish");
+myFish.swim();
+myFish.sound();
+
+
+
+/// Metodos estaticos 
+
+class MathOperations{
+    
+    static sum(a, b){
+        return a + b;
+    }
+}
+
+console.log(MathOperations.sum(5, 10))
